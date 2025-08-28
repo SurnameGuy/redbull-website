@@ -1,18 +1,59 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: 'Segoe UI Light', 'Segoe UI', sans-serif
 }
 
 header {
 	display: flex;
 	flex-direction: row;
-	background-color: red;
+	background-color: darkblue;
 	color: white;
+	font-weight: bold;
 	align-items: center;
+
 	p {
 		margin-left: 10px;
 	}
 }
 
+main {
+	padding: 1rem;
+	background-color: brown;
+}
 
+article {
+	display: flex;
+	margin: 2rem;
+	border: 2px solid blue;
+	border-radius: 15px;
+	background-color: #000321;
+	transition: background-color 0.25s ease-in-out;
+	overflow: hidden;
+	padding: 1.5rem;
+	color: white;
+	img {
+		width: 15rem;
+		height: 15rem;
+	}
+	h1, p {
+		margin: 2rem;
+	}
+	ul {
+		margin: 3rem;
+	}
+}
 
+img {
+	border-radius: 15px;
+	box-shadow: 2.5px 2.5px blue;
+	margin-bottom: 10px;
+}
+
+h1 {
+	margin-bottom: 10px;
+}
+
+article:hover {
+	background-color: black;
+}
