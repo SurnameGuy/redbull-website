@@ -11,15 +11,27 @@ header {
 	color: white;
 	font-weight: bold;
 	align-items: center;
+	height: 4rem;
 
-	p {
-		margin-left: 10px;
+	img {
+		height: 3rem;
+		object-fit: contain;
+		margin-left: 1rem;
+		margin-right: 1rem;
 	}
 }
 
 main {
 	padding: 1rem;
 	background-color: brown;
+}
+
+img {
+	object-fit: cover;
+	object-position: center;
+	border-radius: 15px;
+	box-shadow: 2.5px 2.5px blue;
+	margin-bottom: 3px;
 }
 
 article {
@@ -32,22 +44,25 @@ article {
 	overflow: hidden;
 	padding: 1.5rem;
 	color: white;
+
 	img {
 		width: 15rem;
 		height: 15rem;
+		object-fit: cover;
+		object-position: center;
+		border-radius: 15px;
+		box-shadow: 2.5px 2.5px blue;
+		margin-bottom: 10px;
 	}
-	h1, p {
+
+	h1,
+	p {
 		margin: 2rem;
 	}
+
 	ul {
 		margin: 3rem;
 	}
-}
-
-img {
-	border-radius: 15px;
-	box-shadow: 2.5px 2.5px blue;
-	margin-bottom: 10px;
 }
 
 h1 {
@@ -56,4 +71,30 @@ h1 {
 
 article:hover {
 	background-color: black;
+}
+
+@media (min-width: 913px) {
+	article {
+		max-width: 913px;
+	}
+}
+
+@media (pointer: coarse) {
+	header {
+		img {
+			display: none;
+		}
+		p {
+			margin-left: 0.5rem;
+			font-size: 3.75rem;
+		}
+	}
+	article {
+		flex-direction: column;
+		margin: 0;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 3.3rem;
+		align-items: center;
+	}
 }
