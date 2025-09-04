@@ -73,6 +73,15 @@ article:hover {
 	background-color: black;
 }
 
+footer {
+	background-color: black;
+	color: lightgrey;
+	font-size: 0.9rem;
+	padding: 0.5rem;
+	display: flex;
+	justify-content: center;
+}
+
 @media (min-width: 913px) {
 	article {
 		max-width: 913px;
